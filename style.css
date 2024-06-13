@@ -1,0 +1,17 @@
+p{
+    /* background-image: url(./Flight.webp); */
+    background-size: 1000px;
+    background-repeat: no-repeat;
+     /* color: aqua; */
+     font-size: larger;
+     font-family: "Poppins", sans-serif;
+}
+#my-id{
+    color:blueviolet;
+}
+.my-class{
+    color: green;
+}
+div p{
+    color: yellow;
+}
