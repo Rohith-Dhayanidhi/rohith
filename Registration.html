@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Here</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+CL:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Play:wght@400;700&family=Playwrite+CL:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="bod">
+    <main>
+      <section id="sec">
+        <div id="div00">
+          <div id="div01">
+            <div><h1>Register now to elevate your experience</h1></div>
+            <div id="img"><img src="./Images/login.gif" alt="Follow US" /></div>
+          </div>
+          <div id="div">
+            <div id="div1">
+              <div id="div0">
+                <h1>Register Here</h1>
+              </div>
+              <div>
+                <input id="nam" type="text" placeholder="Name" required />
+                <hr />
+              </div>
+              <div>
+                <input id="age" type="number" placeholder="Age" required />
+                <hr />
+              </div>
+              <div>
+                <input id="mail" type="email" placeholder="Email id" required />
+                <hr />
+              </div>
+              <div>
+                <input
+                  id="npass"
+                  type="password"
+                  placeholder="New Password"
+                  required
+                />
+                <hr />
+              </div>
+              <div>
+                <input
+                  id="cpass"
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <hr />
+              </div>
+              <div><button id="but" onclick="regist()">Register</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./Registration.js"></script>
+  </body>
+  <style>
+    #div00 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px;
+    }
+    #div00 img {
+      height: 500px;
+      width: 500px;
+      border-radius: 20px;
+    }
+    #div00 img:hover {
+      scale: 1.1;
+      transition: 250ms;
+    }
+    #div01 {
+      display: flex;
+      flex-direction: column;
+    }
+    #div01 h1 {
+      font-size: 30px;
+      font-family: "Play", sans-serif;
+    }
+    #div {
+      background-color: rgba(0, 0, 0, 0.179);
+      width: 300px;
+      margin-right: 160px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    #div0 h1 {
+      font-family: "Playwrite CL", cursive;
+      color: rgb(60, 57, 57);
+      margin-left: 60px;
+    }
+    #div1 input {
+      margin-top: 20px;
+      margin-left: 25px;
+      height: 35px;
+      width: 250px;
+      border-radius: 10px;
+      background-color: rgba(231, 225, 225, 0.179);
+      border: none;
+    }
+    #div1 input:hover {
+      scale: 1.1;
+      transition: 250ms;
+      border: 3px solid gray;
+    }
+    ::placeholder {
+      color: black;
+      font-family: "Lobster", sans-serif;
+      font-size: 18px;
+    }
+    #div1 button {
+      margin-top: 25px;
+      margin-left: 100px;
+      height: 35px;
+      width: 100px;
+      border-radius: 10px;
+      background-color: rgba(159, 156, 156, 0.252);
+      font-family: "Lobster", sans-serif;
+      font-size: 20px;
+      border: none;
+    }
+    #div button:hover {
+      scale: 1.1;
+      transition: 250ms;
+      border: 3px solid gray;
+    }
+    #bod {
+      background-image: url(./Images/Register\ BG.jpg);
+      background-size: cover;
+    }
+  </style>
+</html>
